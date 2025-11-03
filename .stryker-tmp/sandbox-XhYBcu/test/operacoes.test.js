@@ -1,3 +1,4 @@
+// @ts-nocheck
 const {
   soma,
   subtracao,
@@ -132,10 +133,9 @@ describe("Suíte de Testes Fortalecida para 50 Operações Aritméticas", () => 
   });
 
   // TESTE ADICIONADO: Testa o caminho de erro (Mata Mutante #52 - NoCoverage)
-  // CORREÇÃO: Alterado "não" para "не" para corresponder ao erro do ficheiro src
   test("11b. deve lançar erro ao buscar máximo de array vazio", () => {
     expect(() => maximoArray([])).toThrow(
-      "Array vazio не possui valor máximo."
+      "Array vazio não possui valor máximo."
     );
   });
 
@@ -144,10 +144,9 @@ describe("Suíte de Testes Fortalecida para 50 Operações Aritméticas", () => 
   });
 
   // TESTE ADICIONADO: Testa o caminho de erro (Mata Mutante #58 - NoCoverage)
-  // CORREÇÃO: Alterado "não" para "не" para corresponder ao erro do ficheiro src
   test("12b. deve lançar erro ao buscar mínimo de array vazio", () => {
     expect(() => minimoArray([])).toThrow(
-      "Array vazio не possui valor mínimo."
+      "Array vazio não possui valor mínimo."
     );
   });
 
@@ -341,9 +340,8 @@ describe("Suíte de Testes Fortalecida para 50 Operações Aritméticas", () => 
   });
 
   // TESTE ADICIONADO: Testa o caminho de erro (Mata Mutante #192 - NoCoverage)
-  // CORREÇÃO: Alterado "não" para "не" para corresponder ao erro do ficheiro src
   test("47c. deve lançar erro ao calcular mediana de array vazio", () => {
-    expect(() => medianaArray([])).toThrow("Array vazio не possui mediana.");
+    expect(() => medianaArray([])).toThrow("Array vazio não possui mediana.");
   });
 
   test("48. deve calcular o dobro de um número", () => {
